@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinfonia Clássica, Cinema & Piano</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="cabecalho">
+        <h1>Harmonia & Teclas: A Arte do Piano</h1>
+        <p>Da música clássica secular às grandes trilhas sonoras do cinema.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+
+        <!-- Seção sobre a História do Piano -->
+        <section class="secao-historia">
+            <h2>A História do Piano</h2>
+            <p>Criado na Itália por volta do ano 1700 por <strong>Bartolomeo Cristofori</strong>, o piano revolucionou a música. Antes dele, instrumentos de teclado como o cravo não permitiam controlar o volume das notas com a força do toque. Cristofori inventou um mecanismo onde martelos de madeira batiam nas cordas, permitindo tocar tanto suavemente (<em>piano</em>) quanto forte (<em>forte</em>) — daí o nome original: <em>Pianoforte</em>.</p>
+            
+            <div class="container-imagem">
+                <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=800&auto=format&fit=crop" alt="Teclas de um Piano de Cauda" class="imagem-destaque">
+                <span class="legenda-imagem">Teclas de um piano de cauda clássico</span>
+            </div>
+        </section>
+
+        <!-- Seção Interativa do Usuário -->
+        <section class="secao-interativa">
+            <h2>Área do Pianista</h2>
+
+            <!-- Campo de texto para o nome -->
+            <div class="campo-grupo">
+                <label for="nome-usuario">Digite seu nome ou apelido:</label>
+                <input type="text" id="nome-usuario" placeholder="Ex: Victor, Chopin, Sally...">
+            </div>
+
+            <!-- Mensagem de saudação personalizada -->
+            <p id="mensagem-saudacao" class="saudacao">Bem-vindo(a) ao nosso universo musical!</p>
+
+            <!-- Formulário de escolha de Peças e Trilhas -->
+            <form id="form-peca">
+                <h3>Escolha uma Obra Musical</h3>
+                <div class="campo-grupo">
+                    <label for="compositor">Selecione uma peça clássica ou trilha de filme:</label>
+                    <select id="compositor" required>
+                        <option value="">-- Escolha uma opção --</option>
+                        <option value="victor">Victor's Piano Solo - A Noiva Cadáver (Danny Elfman)</option>
+                        <option value="jack">Jack's Lament / Tema de Jack - O Estranho Mundo de Jack (Danny Elfman)</option>
+                        <option value="beethoven">Sonata ao Luar - Ludwig van Beethoven</option>
+                        <option value="chopin">Nocturne Op. 9 No. 2 - Frédéric Chopin</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-enviar">Ver Detalhes, Áudio & Partitura</button>
+            </form>
+
+            <!-- Quadro detalhado sobre a música escolhida -->
+            <div id="quadro-detalhes" class="quadro-detalhes oculto">
+                <h3 id="detalhe-titulo">Título da Obra</h3>
+                <p><strong>Compositor / Autor:</strong> <span id="detalhe-autor"></span></p>
+
+                <!-- NOVO: Imagem Ilustrativa do Autor/Obra -->
+                 <div class="area-imagem-autor">
+                     <img id="detalhe-imagem-autor" src="" alt="Ilustração do compositor ou obra" class="imagem-destaque">
+                 </div>
+
+                <!-- Player de Áudio -->
+                <div class="area-audio">
+                    <h4>Ouça um trecho da música:</h4>
+                    <audio id="player-audio" controls>
+                        <source id="fonte-audio" src="" type="audio/mpeg">
+                        Seu navegador não suporta o reprodutor de áudio.
+                    </audio>
+                </div>
+
+                <p><strong>Sobre a Obra:</strong> <span id="detalhe-historia"></span></p>
+                
+                <!-- Imagem da Partitura -->
+                <div class="area-partitura">
+                    <h4>Amostra da Partitura:</h4>
+                    <img id="detalhe-partitura" src="" alt="Partitura da música escolhida" class="imagem-partitura">
+                </div>
+
+                <!-- Sistema de Curtidas -->
+                <div class="area-curtir">
+                    <button id="btn-curtir" type="button">❤️ Curtir esta Peça</button>
+                    <span id="contador-curtidas">0 curtidas</span>
+                </div>
+            </div>
+
+            <!-- Alternar tema visual -->
+            <div class="area-tema">
+                <button id="btn-alternar-tema" type="button">Alternar Destaque do Tema</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>&copy; 2026 - Desenvolvido para os apaixonados por piano e trilhas sonoras.</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
