@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.cabecalho {
+    background-color: #6a0ded;
+    color: white;
+    text-align: center;
+    border: 3px solid #3730a3;
+    padding: 30px;
+    margin: 0;
+}
+
+.cabecalho h1 {
+    margin: 10px ;
+    font-size: 2.2rem;
+}
+
+.cabecalho p {
+    margin: padrão do navegador;
+    font-size: 0.95rem;
+}
+
+.conteudo {
+  
+    border: 2px solid #c7d2fe;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.sobre {
+    background-color: #fbf8ff;
+    border: 2px solid #818cf8;
+    padding: 20px;
+  
+}
+
+.sobre h2, .habilidades h2 {
+    color: #6a0ded;
+    margin-top: 0;
+  
+}
+
+.sobre p, .habilidades p {
+    padding: 0;
+}
+
+.destaque {
+    color: #d60052;
+    font-weight: bold;
+}
+
+.habilidades {
+    background-color: #fbf8ff;
+    border: 2px solid #a78bfa;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.habilidades span {
+    display: inline-block;
+    background-color: #8a2be2;
+    color: white;
+    padding: 8px;
+    margin: 5px 5px 5px 0;
+    border: 2px solid #5b21b6;
+    font-size: 0.9rem;
+}
+
+
+.rodape {
+    background-color: #2d1354;
+    color: white;
+    text-align: center;
+    padding: 20px;            
+    margin-top: 25px;                     
+    font-size: 0.85rem;
+}
+
