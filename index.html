@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T Filmes</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Catálogo de Filmes</h1>
+
+  
+    <form id="form-filme" class="form-cadastro">
+      <input type="text" id="titulo" placeholder="Título do filme" required />
+      <input type="number" id="ano" placeholder="Ano de lançamento" required />
+      <input type="text" id="genero" placeholder="Gênero (ex: Drama, Terror)" required />
+      <button type="submit">Cadastrar Filme</button>
+    </form>
+
+    <div id="catalogo" class="grid-filmes"></div>
+  </div>
+
+  <div class="container-botao">
+    <button id="btn-limpar">Limpar Favoritos</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
