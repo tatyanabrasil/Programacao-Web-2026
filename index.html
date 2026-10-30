@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bella | Loja Online de Cosméticos</title>
+    
+    <!-- Tipografia Editorial Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header> 
+        <div class="topo-cabecalho">
+            <h1 id="logo-inicio">All Bella</h1>
+
+            <form id="form-busca" class="busca-produto">
+                <input type="text" id="campo-busca" placeholder="Pesquise por batom, perfume, creme...">
+                <button type="submit" id="botao-busca">Buscar</button>
+            </form>
+
+            <button type="button" id="botao-ver-favoritos" class="botao-favorito-topo">
+                <span class="coracao-icone">♥</span> Favoritos
+            </button>
+        </div>
+
+        <nav class="menu-categorias">
+            <button type="button" class="botao-categoria ativo" data-categoria="todos">Início</button>
+            <button type="button" class="botao-categoria" data-categoria="beauty">Maquiagem</button>
+            <button type="button" class="botao-categoria" data-categoria="fragrances">Perfumes</button>
+            <button type="button" class="botao-categoria" data-categoria="skin-care">Cuidados com a Pele</button>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner-principal">
+        <img 
+            src="https://blog.connectplug.com.br/wp-content/uploads/2022/03/top-view-decoration-with-beauty-products-pink-background-scaled.jpg" 
+            alt="Banner promocional da All Bella com produtos de beleza"
+        >
+    </section>
+      
+    <!-- Vitrine Principal -->
+    <main>
+        <p id="mensagem-status">Carregando produtos...</p> 
+        <section id="vitrine-produtos" class="vitrine"></section>
+    </main>
+
+    <!-- Modal de Detalhes -->
+    <dialog id="modal-detalhes" class="modal">
+        <div id="conteudo-detalhes" class="conteudo-modal"></div>
+    </dialog>
+
+    <!-- Notificação de Desfazer Favorito -->
+    <div id="toast-desfazer" class="toast-aviso">
+        <span>Produto removido dos favoritos.</span>
+        <button type="button" id="btn-desfazer">Desfazer</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p id="rodape">Atividade de Programação Web feita por Fernanda Brito e Tatyana Brasil.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
